@@ -213,6 +213,7 @@ endif()
 #
 
 add_executable(llama
+               main.cpp
                llama.cpp)
 
 add_executable(quantize quantize.cpp)
