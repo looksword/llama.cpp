@@ -212,7 +212,8 @@ endif()
 # Build library
 #
 
-add_executable(llama main.cpp)
+add_executable(llama
+               llama.cpp)
 
 add_executable(quantize quantize.cpp)
 
