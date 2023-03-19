@@ -216,6 +216,10 @@ add_executable(llama
                main.cpp
                llama.cpp)
 
+if(NOT WIN32)
+    target_sources(llama PRIVATE tcp_server.cpp)
+endif()
+
 add_executable(quantize quantize.cpp)
 
 add_library(utils OBJECT
